@@ -14,6 +14,7 @@ const monthly = [
       "Real-time analytics",
     ],
     type:"Free for ever",
+    caption:"No credit card needed",
   },
   {
     name:"Starter",
@@ -27,6 +28,7 @@ const monthly = [
       "1% payment commission",
     ],
  type:"Billed monthly",
+ caption:"7 days free trial no credit card needed"
   },
   {
     name: "Pro",
@@ -39,7 +41,8 @@ const monthly = [
       "5,000 conversion actions included",
       "No payment commission",
     ],
-    h1:"Free",
+    type:"Billed Monthly",
+    caption:"7 days free trial no credit card needed"
   },
 ];
 const yearly = [
@@ -55,7 +58,8 @@ const yearly = [
         "5% payment commission",
         "Real-time analytics",
       ],
-      h1:"Free",
+      type:"Free for ever",
+      caption:"No credit card needed",
     },
     {
       name:"Starter",
@@ -68,7 +72,8 @@ const yearly = [
         "1,000 conversion actions included",
         "1% payment commission",
       ],
-      h1:"Free",
+      type:"Billed $180 yearly",
+      caption:"7 days free trial no credit card needed"
     },
     {
       name: "Pro",
@@ -81,13 +86,14 @@ const yearly = [
         "5,000 conversion actions included",
         "No payment commission",
       ],
-      type:"Billed monthly",
+      type:"Billed $540 yearly",
+      caption:"7 days free trial no credit card needed"
     },
   ];
   
   const MonthlyBill=()=>{
     return (
-        <div className="sm:flex sm:flex-col sm:align-center p-10 font-jakarta">
+        <div className="sm:flex sm:flex-col sm:align-center p-10 font-jakarta animation-fadeInUp">
       
           <div className="mt-12 space-y-9 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
             {monthly.map((plan, index) => (
@@ -103,13 +109,14 @@ const yearly = [
                     <span className="text-base font-medium text-slate-500">/mo</span>
                   </p>
     
-                  <p className="text-black">{plan.h1}</p>
+                  <p className="text-black">{plan.type}</p>
                   <a
                     href="/sign-up"
                     className="mt-8 block w-full bg-[#2E2E2E] rounded-xl py-4 text-sm font-semibold text-white text-center"
                   >
                     Get Started
                   </a>
+                  <p className="text-center text-sm">{plan.caption}</p>
                 </div>
                 <div className="pt-6 pb-8 px-6">
                   <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">What's included</h3>
@@ -145,14 +152,16 @@ const yearly = [
   }
   const YearlyBill=()=>{
     return (
-        <div className="sm:flex sm:flex-col sm:align-center p-10 font-jakarta">
+        <div className="sm:flex sm:flex-col sm:align-center space-y-2 font-jakarta">
 
-    
-          <div className="mt-12 space-y-9 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
+
+          <div className="mt-12 space-y-5 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
             {yearly.map((plan, index) => (
               <div key={index} className="border border-slate-200 rounded-lg shadow-sm">
-                <div className="p-6">
-                {/* <button className="top-12 bg-emerald-500 px-3 py-5 text-sm font-semibold tracking-wide rounded-full shadow-md">Most Popular</button> */}
+                <div className="p-6 relative">
+                {index === 1 ? (
+ <p className="top-0 right-0 absolute -translate-y-1/2 bg-[#2E2E2E] px-3 py-2 text-sm text-white font-semibold tracking-wide rounded-full shadow-md">Best deal 🔥</p>
+              ):null}
                   <button className={`text-xl leading-6 font-semibold text-slate-800  px-6 py-2 tracking-wider ${index === 0 ? "bg-gray-100 border-slate-50 rounded-full":null} ${index === 1 ? "bg-orange-100 border-slate-50 rounded-full":null} ${index === 2 ? "bg-red-100 border-slate-50 rounded-full":null}`}>{plan.name}</button>
                   <p className="mt-2 text-base text-slate-700 leading-tight">{plan.description}</p>
                   <p className="mt-8">
@@ -160,17 +169,18 @@ const yearly = [
                     <span className="text-base font-medium text-slate-500">/mo</span>
                   </p>
     
-                  <p>Free for ever</p>
+                  <p>{plan.type}</p>
                   <a
                     href="/sign-up"
                     className="mt-8 block w-full bg-[#2E2E2E] rounded-xl py-4 text-sm font-semibold text-white text-center"
                   >
                     Get Started
                   </a>
+                  <p className="text-center text-sm">{plan.caption}</p>
                 </div>
                 <div className="pt-6 pb-8 px-6">
                   <h3 className="text-sm font-bold text-slate-900 tracking-wide uppercase">What's included</h3>
-                  <ul role="list" className="mt-4 space-y-3">
+                  <ul role="list" className="mt-4 space-y-1">
                     {plan.features.map((feature, index) => (
                       <li key={index} className="flex space-x-3">
                         <svg
@@ -208,8 +218,23 @@ const Pricing = () => {
   };
 return(
     <div>
+        <div className="mx-auto max-w-screen px-4 py-2 font-jakarta animation-fadeInUp">
+      <div className='relative flex flex-col items-center justify-center py-24 font-jakarta '>
+       <button className="rounded-full bg-zinc-200 px-8 py-1 text-md text-zinc-800 mb-8 font-semibold">
+
+       Pricing and plans 💰
+
+        </button>
+        <div className="font-semibold  text-zinc-800">
+          <p className="text-[60px]">
+
+Find the best plan for your needs</p>
+        </div>
+        </div>
+      </div>
+
       <div className="flex justify-center mb-4 font-jakarta font-semibold">
-      
+     
         <div className="bg-gray-200 px-3 py-1 rounded-xl">
         <button
   className={`${

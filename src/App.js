@@ -8,6 +8,8 @@ import SlideShow from './components/Navbar';
 import FAQs from './components/FAQs';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
+import LastCTA from './components/LastCTA';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
 <Testimonials/>
 <Pricing/>
 <FAQs/>
+<LastCTA/>
+<Footer/>
    </div>
   );
 }
