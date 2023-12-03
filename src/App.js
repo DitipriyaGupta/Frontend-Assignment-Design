@@ -7,6 +7,7 @@ import AuthForm from './components/Navbar';
 import SlideShow from './components/Navbar';
 import FAQs from './components/FAQs';
 import Testimonials from './components/Testimonials';
+import Pricing from './components/Pricing';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
 <Hero/>
 <Features/>
 <Testimonials/>
+<Pricing/>
 <FAQs/>
    </div>
   );

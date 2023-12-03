@@ -1,0 +1,33 @@
+.scroll-container {
+    overflow: hidden;
+  }
+   
+  .cards-wrapper {
+    display: flex;
+    animation: scrollRight 10s linear infinite;
+    white-space: nowrap;
+    transition: all 1.4s ease-in-out;
+  }
+   
+  .card {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust card width as needed */
+    margin-right: 10px; /* Adjust spacing between cards as needed */
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+   
+  @keyframes scrollRight {
+    0% {
+      transform: translateX(calc(-176px * 6)); /* Number of cards * card width */
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+   
+  .cards-wrapper:hover {
+    animation-play-state: paused;
+    transition: all 0.4s ease-in-out;
+  }
+   
