@@ -8,7 +8,7 @@ const Features = () => {
   };
   return (
     <div>
-      <div className="relative flex flex-col items-center justify-center py-32 font-jakarta font-semibold animation-fadeInUp">
+      <div className="relative flex flex-col items-center justify-center py-32 font-jakarta font-semibold ">
         <button className="rounded-full bg-zinc-200 px-8 py-1 text-md text-zinc-800 mb-8">
           Our main features 🦸🏼
         </button>
@@ -331,138 +331,7 @@ Safeguard your personal information and event details with our robust security m
             </div>
           </div>
         </div>
-        {/* <div className="flex w-[1200px] mt-24 justify-center align">
-  <div className="grid lg:grid-cols-3">
-    <div className="max-w-md mx-4 mb-4 rounded-lg">
-      <div className="py-12 flex justify-center rounded-lg bg-gray-100">
-        <img
-          className="rounded-lg w-56"
-          src="https://framerusercontent.com/images/MnBPtp8lNOwne9QGiLZLBCkZK9k.svg"
-          alt="product"
-        />
-      </div>
-      <div className="px-6 py-4">
-        <div className="mb-3">
-          <button className="text-xl font-semibold rounded-full bg-black text-gray-800 tracking-tight">
-            This is the title
-          </button>
-        </div>
-        <p className="leading-normal text-gray-700">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, quibusdam
-          facere quo laborum maiores sequi nam tenetur laudantium.
-        </p>
-      </div>
-    </div>
-
-    <div className="max-w-md mx-4 mb-4 rounded-lg">
-      <div className="py-12 flex justify-center rounded-lg bg-gray-100">
-        <img
-          className="rounded-lg w-56"
-          src="https://framerusercontent.com/images/9zLLT2PHM1pdm0cmjDvqVV6u4.svg"
-          alt="product"
-        />
-      </div>
-      <div className="px-6 py-4">
-        <div className="mb-3">
-          <button className="text-xl font-semibold rounded-full bg-black tracking-tight text-gray-800">
-            This is the title
-          </button>
-        </div>
-        <p className="leading-normal text-gray-700">
-          Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium,
-          quibusdam facere quo laborum maiores sequi nam tenetur laud.
-        </p>
-      </div>
-    </div>
-
-    <div className="max-w-md mx-4 mb-4 rounded-lg">
-      <div className="py-12 flex justify-center rounded-lg bg-gray-100">
-        <img
-          className="rounded-lg w-56"
-          src="https://framerusercontent.com/images/9zLLT2PHM1pdm0cmjDvqVV6u4.svg"
-          alt="product"
-        />
-      </div>
-      <div className="px-6 py-4">
-        <div className="mb-3">
-          <button className="text-xl font-semibold rounded-full bg-black tracking-tight text-gray-800">
-            This is the title
-          </button>
-        </div>
-        <p className="leading-normal text-gray-700">
-          Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium,
-          quibusdam facere quo laborum maiores sequi nam tenetur laud.
-        </p>
-      </div>
-    </div>
-  </div>
-</div> */}
-        {/* <div className="flex w-[1200px] mt-24 justify-center align">
-  <div className="grid lg:grid-cols-3">
-    <div className="max-w-md mx-4 mb-4 rounded-lg">
-      <div className="py-12 flex justify-center rounded-lg bg-gray-100">
-        <img
-          className="rounded-lg w-4/6"
-          src="https://framerusercontent.com/images/MnBPtp8lNOwne9QGiLZLBCkZK9k.svg"
-          alt="product"
-        />
-      </div>
-      <div className="px-6 py-4">
-        <div className="mb-3">
-          <button className="text-xl font-semibold rounded-full bg-black text-gray-800 tracking-tight">
-            This is the title
-          </button>
-        </div>
-        <p className="leading-normal text-gray-700">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, quibusdam
-          facere quo laborum maiores sequi nam tenetur laudantium.
-        </p>
-      </div>
-    </div>
-
-    <div className="max-w-md mx-4 mb-4 rounded-lg">
-      <div className="py-12 flex justify-center rounded-lg bg-gray-100">
-        <img
-          className="rounded-lg w-4/6"
-          src="https://framerusercontent.com/images/MnBPtp8lNOwne9QGiLZLBCkZK9k.svg"
-          alt="product"
-        />
-      </div>
-      <div className="px-6 py-4">
-        <div className="mb-3">
-          <button className="text-xl font-semibold rounded-full bg-black tracking-tight text-gray-800">
-            This is the title
-          </button>
-        </div>
-        <p className="leading-normal text-gray-700">
-          Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium,
-          quibusdam facere quo laborum maiores sequi nam tenetur laud.
-        </p>
-      </div>
-    </div>
-
-    <div className="max-w-md mx-4 mb-4 rounded-lg">
-      <div className="py-12 flex justify-center rounded-lg bg-gray-100">
-        <img
-          className="rounded-lg w-4/6"
-          src="https://framerusercontent.com/images/9zLLT2PHM1pdm0cmjDvqVV6u4.svg"
-          alt="product"
-        />
-      </div>
-      <div className="px-6 py-4">
-        <div className="mb-3">
-          <button className="text-xl font-semibold rounded-full bg-black tracking-tight text-gray-800">
-            This is the title
-          </button>
-        </div>
-        <p className="leading-normal text-gray-700">
-          Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium,
-          quibusdam facere quo laborum maiores sequi nam tenetur laud.
-        </p>
-      </div>
-    </div>
-  </div>
-</div> */}
+        
       </div>
     </div>
   );
