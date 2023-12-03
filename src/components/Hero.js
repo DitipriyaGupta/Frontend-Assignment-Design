@@ -1,7 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
+import FAQs from './FAQs'
 
 const Hero = () => {
+ 
   return (
+ 
+
+
     <div className='relative flex flex-col items-center justify-center py-32 font-jakarta '>
     <button className='rounded-full bg-zinc-100 px-8 py-1 text-sm '>An other way to manage time️</button>
   
@@ -21,6 +26,7 @@ const Hero = () => {
     </div> 
 
   </div>
+
   
   )
 }

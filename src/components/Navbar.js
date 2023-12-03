@@ -7,7 +7,7 @@ const Navbar = () => {
     setOpen(!open)
   }
   return (
-    <nav className="bg-white fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
+    <nav className="bg-[#fef9f6] fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
       <div className="relative w-screen flex flex-wrap items-center font-medium justify-around ">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <span className="flex space-x-1 items-center">
@@ -54,7 +54,7 @@ const Navbar = () => {
 { open &&
         <ul
           className={`
-        md:hidden w-full align-center bg-red-500 fixed top-0  bottom-0 py-24 pl-4
+        md:hidden w-full h-1/3 align-center bg-[#fef9f6] fixed top-0  overflow-y-auto bottom-0 py-24 pl-4
    flex flex-col items-center border-b font-jakarta font-semibold space-y-3 transition-all duration-500 ease-in overflow-y-auto `}
         >
          <li
