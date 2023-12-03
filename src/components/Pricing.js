@@ -93,7 +93,7 @@ const yearly = [
   
   const MonthlyBill=()=>{
     return (
-        <div className="sm:flex sm:flex-col sm:align-center p-10 font-jakarta animation-fadeInUp">
+        <div className="sm:flex sm:flex-col sm:align-center p-10 font-jakarta animation-fadeInUp" >
       
           <div className="mt-12 space-y-9 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
             {monthly.map((plan, index) => (
@@ -217,8 +217,8 @@ const Pricing = () => {
     setIsLogin(!isLogin);
   };
 return(
-    <div>
-        <div className="mx-auto max-w-screen px-4 py-2 font-jakarta animation-fadeInUp">
+    <div id="Pricing">
+        <div className="mx-auto max-w-screen px-4 py-2 font-jakarta animation-fadeInUp" >
       <div className='relative flex flex-col items-center justify-center py-24 font-jakarta '>
        <button className="rounded-full bg-zinc-200 px-8 py-1 text-md text-zinc-800 mb-8 font-semibold">
 

@@ -8,7 +8,7 @@ import "../styles/testimonials.css"
 const Testimonials = () => {
   return (
     <div>
-      <div className="mx-auto max-w-screen px-4 py-12 font-jakarta animation-fadeInUp">
+      <div className="mx-auto max-w-screen px-4 py-12 font-jakarta animation-fadeInUp" id="Testimonial">
       <div className='relative flex flex-col items-center justify-center py-24 font-jakarta '>
        <button className="rounded-full bg-zinc-200 px-8 py-1 text-md text-zinc-800 mb-8 font-semibold">
        They already love our products 😍

@@ -33,7 +33,7 @@ const FAQs = () => {
   
   return (
     
-    <div className='relative flex flex-col items-center justify-center py-32 font-jakarta animation-fadeInUp'>
+    <div className='relative flex flex-col items-center justify-center py-32 font-jakarta animation-fadeInUp' id="FAQs">
        <button className="rounded-full bg-zinc-200 px-8 py-1 text-md text-zinc-800 mb-8 font-semibold">
        Relevant stuff, bla bla 📣
         </button>

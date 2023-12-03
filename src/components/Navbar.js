@@ -28,16 +28,18 @@ const Navbar = () => {
             className=" font-semibold text-zinc-400 hover:text-black hover:border-b-2 border-black"
            
           >
-            Features
+           <a href="#features">Features</a> 
           </li>
           <li className="text-zinc-400 hover:text-black hover:border-b-2 border-black">
-            Testimonial
+            
+            <a href="#Testimonial">Testimonial</a> 
           </li>
           <li className="text-zinc-400 hover:text-black hover:border-b-2 border-black">
-            Pricing
+           
+            <a href="#Pricing"> Pricing</a>
           </li>
           <li className="text-zinc-400 hover:text-black hover:border-b-2 border-black">
-            FAQs
+                <a href="#FAQs">  FAQs</a>
           </li>
           <li className="text-zinc-400 hover:text-black hover:border-b-2 border-black">
             Blog
